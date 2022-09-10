@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<!-- *AUDIO SOURCE* -->
+		<audio id="audio-showcase" controls loop autoplay hidden>
+			<source id="audio-showcase" src="song/song.mp3" type="audio/mp3" />
+		</audio>
+		<!-- *LOGO SOURCE* -->
+		<div class="logo">
+			<img src="img/logo.png" />
+		</div>
+		<!-- *VIDEO SOURCE* 	
+			video link: https://www.youtube.com/watch?v=covxozOx59Q
+		-->
+		<video id="video" autoplay muted loop>
+			<source id="video" src="video/loadingvid.mp4" type="video/mp4" />
+		</video>
+		<!-- *CONTROLS* -->
+		<div class="music-controls">
+			<img id="stop" src="img/pause.png" alt="" onclick="muteMusic()" />
+			<img id="play" class="hide" src="img/play.png" alt="" onclick="playMusic()" />
+		</div>
+	</body>
+</html>
+
+<script>
+	// variables
+	let audio = document.getElementById("audio-showcase");
+	const stop_btn = document.getElementById("stop");
+	const play_btn = document.getElementById("play");
+
+	// default setting volume
+	audio.volume = 0.05;
+
+	// function to mute music
+	function muteMusic() {
+		audio.volume = 0;
+
+		stop_btn.classList.add("hide");
+		play_btn.classList.remove("hide");
+	}
+	// function to play music
+	function playMusic() {
+		audio.volume = 0.05;
+
+		stop_btn.classList.remove("hide");
+		play_btn.classList.add("hide");
+	}
+</script>

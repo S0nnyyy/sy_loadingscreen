@@ -1,0 +1,70 @@
+/*  ..DEFAULT SETTINGS.. */
+
+:root {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+/*  ..LOGO.. */
+
+.logo {
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	animation: float 6s ease-in-out infinite;
+}
+
+/*  LOGO ANIMATION */
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-50px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/*  ..BACKGROUND.. */
+
+video {
+	object-fit: cover;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	filter: blur(15px);
+	transform: scale(1.1);
+}
+
+/*  ..CONTROLS.. */
+
+.music-controls {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 90%;
+	cursor: pointer;
+}
+
+.music-controls:hover {
+	cursor: pointer;
+}
+
+/*  ..PROPERTY FOR JS.. */
+
+.hide {
+	display: none;
+}
