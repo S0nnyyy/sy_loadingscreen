@@ -1,8 +1,6 @@
-# sy_loadingscreen
+# Fivem Loading Screen sy_loadingscreen
 
- Fivem Loading Screen
-
-Simple loading screen for Fivem server.
+Simple loading screen for Fivem server created using this languages - Lua, HTML, CSS, JS
 
 ## Getting Started
 
