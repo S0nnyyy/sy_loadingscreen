@@ -24,8 +24,10 @@ $ Final step
    Then, edit your server.cfg file to have ensure sy_loadingscreen.
 
 ```
+
 ### ERRORS
 
+```
 $ Video not loading
   
   I recommend uploading a video with a maximum length of 3 minutes and ideally compressing it
@@ -33,7 +35,8 @@ $ Video not loading
 $ Wrong path
 
   be careful of the wrong path
-
+  
+```
 
  #### Background video
  
